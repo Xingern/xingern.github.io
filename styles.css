@@ -107,7 +107,7 @@ nav ul li {
     display: block;
     position: relative;
     height: 43.75rem;
-    background: url("./Images/Banner.jpg") center center no-repeat;
+    background: url("Images/Banner.jpg") center center no-repeat;
     background-size: cover;
     text-align: center;
   }
