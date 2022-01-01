@@ -31,3 +31,5 @@ The general structure of the website is as following:
 1. Pictures not displaying correctly when downloading project. I believe this is cause by the file pathway
    since the root of the computer is not the same as on Github. A solution would to host the picture i.e. Flickr.  
 2. Scaling, this website is currently not that mobile friendly. 
+3. The social media icons need improvements, especially Instagram. I would also be cool to add box shadow,
+   but the other icons behave weird. 
