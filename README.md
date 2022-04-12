@@ -11,7 +11,7 @@ send me an email at xingdotmail@gmail.com. Thank you for your visit!
 
 This part is mostly for myself so that I can remember what I am doing. The current design is inspired by the
 CSS course on Codecademy and from freeCodeCamp (https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/). The buttons are from cssbuttons.app (https://cssbuttons.app/buttons/54). I am thankfull for favicon.io (https://favicon.io/emoji-favicons/) for the icons. The timeline
-used is made by Stas Melnikov (https://codepen.io/melnik909/pen/qPjwvq). The skills are made by ZhangZhuo (https://codepen.io/zhangzhuo/pen/vOwwKX). 
+used is made by Stas Melnikov (https://codepen.io/melnik909/pen/qPjwvq). The skills are made by ZhangZhuo (https://codepen.io/zhangzhuo/pen/vOwwKX). The template for the photography page was from templatemo (https://templatemo.com/tm-520-highway).
 
 The general structure of the website is as following:
 
@@ -28,6 +28,7 @@ The general structure of the website is as following:
 3. Timeline (Courses + Studass.)
 
 ## The Photographer
+1. Intro video
 1. Gallery
 
 # Known Issues
@@ -36,4 +37,4 @@ The general structure of the website is as following:
 2. Scaling, this website is currently not that mobile friendly. Hamburger menu is also not implemented.
 3. The social media icons need improvements, especially Instagram. I would also be cool to add box shadow,
    but the other icons behave weird. 
-4. The html code behind the timelines are pretty messy, problems with indents and not that user friendly. 
+4. The HTML code behind the timelines are pretty messy, problems with indents and not that user friendly. 
