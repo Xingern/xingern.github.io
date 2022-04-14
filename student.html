@@ -4,9 +4,9 @@
     <title>Xing The Student</title>
     <link rel="icon" href="media/icons/BooksIcon.png">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
 <body>
@@ -14,19 +14,44 @@
     <nav>
         <h1>Jun Xing Li</h1>
         <ul class="navigation">
-            <li><a href="./index.html" class="nav-link">Home</a></li> 
-            <li><a href="./student.html#skills" class="nav-link">Key Skills</a></li>
-            <li><a href="./student.html#uni-life" class="nav-link">University Life Overview</a></li>
-            <li><a href="./student.html#course-overview" class="nav-link">Courses Taken</a></li>            
+          <li><a href="./index.html" class="nav-link">Home</a></li>
+          <li><a href="./student.html" class="nav-link">The Student</a></li>
+          <li><a href="./photographer.html" class="nav-link">The Photographer</a></li>
+          <li><a href="./index.html#contact" class="nav-link">Contact Me</a></li>            
         </ul>
         <button class="burger-menu" id="burger-menu">
           <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
       </nav>
 
+      <section class="stud-banner">
+        <div>
+          <h1>The Student</h1>
+          <!-- Navigation Buttons-->
+          <a href="./student.html#skills">
+            <button class="button">
+              <span class="student">Key Skills</span>
+            </button>
+          </a>
+  
+          <a href="./student.html#university-journey">
+            <button class="button">
+              <span class="photographer">University Journey</span>
+            </button>
+          </a>
+
+          <a href="./student.html#overview-of-courses">
+            <button class="button">
+              <span class="photographer">Overview of Courses</span>
+            </button>
+          </a>
+        </div>
+    </section>
+
+
     <!-- Key Skills -->
     
-    <section class="skills">
+    <section class="skills" id="skills"">
         <h1 id="key-skills">Key Skills</h1>
         <ul>
           <li>
@@ -76,7 +101,7 @@
 
 
     <!-- Timeline Overview-->
-    <div class="page">
+    <div class="page" id="university-journey">
         <h1 class="timeline-h1" id="uni-life">University Life Overview</h1>
         <div class="timeline">
           <div class="timeline__group">
@@ -130,7 +155,7 @@
                   <p>Switched studies to <a href="https://www.ntnu.no/studier/mtkj" 
                     target="_blank">Chemical Engineering and Biotechnology</a>. Joined Høiskolens
                     Chemikerforening as a member of Promoteringskomiteen. Started at my first 
-                    position at NTNU as student assistant whcih revolves around guiding students 
+                    position at NTNU as student assistant which revolves around guiding students 
                     and grading their weekly assignments.</p>
                 </div>
               </div>
@@ -160,10 +185,10 @@
                     <span class="time__day"></span>
                     <span class="time__month">Spring</span>
                   </time>
-                  <h3 class="card__title r-title">Mentor</h3>
+                  <h3 class="card__title r-title">Mentor at MentorNorge</h3>
                 </header>
                 <div class="card__content">
-                  <p> Responsible of teaching a student throughout the semester in preparation finals.</p>
+                  <p> Responsible of teaching a student throughout the semester in preparation for finals.</p>
                 </div>
               </div>
             </div>
@@ -181,8 +206,9 @@
                   <h3 class="card__title r-title">Department Representative</h3>
                 </header>
                 <div class="card__content">
-                  <p>Elected as department representative for <a href="https://www.ntnu.no/kjempros" 
-                    target="_blank">Department of Chemical Engineering </a></p>
+                  <p>Elected as department representative for <a href="https://www.ntnu.edu/chemeng" 
+                    target="_blank">Department of Chemical Engineering</a>. Responsible to 
+                    represent students during board meetings and hiring processes.</p>
                 </div>
               </div>
             </div>
@@ -212,7 +238,7 @@
 
 
       <!-- Courses Overview-->
-      <div class="page">
+      <div class="page" id="overview-of-courses">
         <h1 class="timeline-h1" id="course-overview">Overview of Courses</h1>
         <div class="timeline">
 
@@ -350,10 +376,10 @@
                 <div class="card__content">
                     <ul>
                         <li class="mini-title">Courses taken</li>
-                        <li> <a href="https://www.ntnu.edu/studies/courses/TMA4240/2021" 
-                        target="_blank"> TMA4240 </a> - Statistics</li>
                         <li> <a href="https://www.ntnu.edu/studies/courses/TMA4195/2021" 
                         target="_blank"> TMA4195 </a> - Mathematical modelling</li>
+                        <li> <a href="https://www.ntnu.edu/studies/courses/TMA4240/2021" 
+                        target="_blank"> TMA4240 </a> - Statistics</li>
                         <li> <a href="https://www.ntnu.edu/studies/courses/TKP4105 /2021" 
                         target="_blank"> TKP4105  </a> - Separation technology</li>
                         <li> <a href="https://www.ntnu.edu/studies/courses/TKP4110/2021" 
@@ -378,7 +404,7 @@
               <div class="timeline__card card">
                 <header class="card__header">
                   <time class="time">
-                    <span class="time__month">Spring (not final)</span>
+                    <span class="time__month">Spring</span>
                   </time>
                 </header>
                 <div class="card__content">
@@ -401,6 +427,33 @@
                 </div>
               </div>
 
+              <div class="timeline__card card">
+                <header class="card__header">
+                  <time class="time">
+                    <span class="time__month">Autumn (not final)</span>
+                  </time>
+                </header>
+                <div class="card__content">
+                    <ul>
+                        <li class="mini-title">Courses taken</li>
+                        <li> <a href="https://www.ntnu.edu/studies/courses/TKP4140/2021" 
+                        target="_blank"> TKP4140 </a> - Process control</li>
+                        <li> <a href="https://www.ntnu.edu/studies/courses/TKP4160/2021" 
+                        target="_blank"> TKP4160 </a> - Transport phenomena</li>
+                        <li> <a href="https://www.ntnu.edu/studies/courses/TKP4170/2021" 
+                        target="_blank"> TKP4170 </a> - Process design, project</li>
+                        <li> <a href="https://www.ntnu.edu/studies/courses/TPD4114/2021" 
+                        target="_blank"> TPD4114 </a> - Visual communication</li>
+                        
+                        
+                        
+                        <li>&nbsp</li>
+                        <li class="mini-title">Learning assistant</li>
+                        <li> <a href="https://www.ntnu.no/studier/teknostart" 
+                        target="_blank"> TMT4115 </a> - General chemistry, Teknostart</li>
+                    </ul>
+                </div>
+              </div>
         
             </div>
           </div>

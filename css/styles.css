@@ -114,7 +114,7 @@ nav ul li {
     background: url(../media/LogoBanner.jpg) center center no-repeat;
     background-size: cover;
     text-align: center;
-  }
+}
 
 .banner h1 {
     padding-top: 9rem;
@@ -125,6 +125,29 @@ nav ul li {
     font-size: 4rem;
 }
 /* Banner end */
+
+/* Student banner */
+.stud-banner {
+    display: block;
+    position: relative;
+    height: 43.75rem;
+    background: url(../media/IMG_8750.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.stud-banner h1 {
+    padding-top: 9rem;
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.stud-banner h2 {
+    font-size: 4rem;
+}
+
+/* Student banner end */
 
 /* About */
 .about {
