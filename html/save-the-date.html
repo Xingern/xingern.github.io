@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linnea & Xing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/save-the-date.css">
+</head>
+<body>
+    <section class="hero" id="home">
+        <h2 class="title">HOLD AV DATOEN</h2>
+        <h1 class="names">Linnea & Xing</h1>
+        <p class="date">12. AUGUST 2025</p>
+        <div class="scroll-down" onclick="document.getElementById('video').scrollIntoView()"></div>
+    </section>
+    
+    <section class="video-section" id="video">
+        <h2 class="section-title">Vår Historie</h2>
+        <div class="video-container">
+            <!-- Replace this div with your actual video -->
+            <div class="video-placeholder">
+                Din video vil vises her
+                <!-- You can use: 
+                <video controls>
+                    <source src="your-video-url.mp4" type="video/mp4">
+                    Nettleseren din støtter ikke videoavspilling.
+                </video>
+                -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="details-section" id="details">
+        <h2 class="section-title">Detaljer for bryllupet</h2>
+        <div class="details-container">
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <h3 class="detail-title">Når</h3>
+                <p class="detail-text">12. august 2025<br>Seremoni klokken 15:00</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="detail-title">Hvor</h3>
+                <p class="detail-text">Sunset Garden Venue<br>123 Paradise Lane<br>Beautiful City, BC</p>
+            </div>
+            
+            <div class="detail-card">
+                <div class="detail-icon">
+                    <i class="fas fa-glass-cheers"></i>
+                </div>
+                <h3 class="detail-title">Middag</h3>
+                <p class="detail-text">Mottakelse følger<br>Middag & Dans<br>Formelt antrekk ønskes</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Vi gleder oss til å feire med deg!</p>
+        <p>Hvis du har noen spørsmål, vennligst send en e-post til <a href="mailto:xingdotmail@gmail.com">xingdotmail@gmail.com/a></p>
+        <p>&copy; 2025 Linnea & Xing</p>
+    </footer>
+    
+    <script>
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
