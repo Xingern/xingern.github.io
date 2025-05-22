@@ -14,8 +14,6 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
-
 /* Hero section */
 .hero {
     height: 100vh;
@@ -31,6 +29,21 @@ body {
     padding: 20px;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:rgba(0,0,0,0.3);
+    z-index: 1;
+    pointer-events: none;
+}
+.hero > * {
+    position: relative;
+    z-index: 2;
 }
 
 .hero::after {
