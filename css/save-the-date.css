@@ -14,6 +14,8 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+
 /* Hero section */
 .hero {
     height: 100vh;
@@ -21,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../media/bryllup/image.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 800"><rect width="100%" height="100%" fill="%23f8f5f2"/><path d="M0 200 L800 200" stroke="%23e8d5c4" stroke-width="0.5" /><path d="M0 400 L800 400" stroke="%23e8d5c4" stroke-width="0.5" /><path d="M0 600 L800 600" stroke="%23e8d5c4" stroke-width="0.5" /><path d="M200 0 L200 800" stroke="%23e8d5c4" stroke-width="0.5" /><path d="M400 0 L400 800" stroke="%23e8d5c4" stroke-width="0.5" /><path d="M600 0 L600 800" stroke="%23e8d5c4" stroke-width="0.5" /></svg>');
     background-size: cover;
     background-position: center;
     color: #fff;
