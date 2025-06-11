@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('../media/bryllup/venue.png');    background-size: cover;
+    background: url('../media/bryllup/venue.png');
     background-size: cover;
     background-position: center;
     color: #fff;
