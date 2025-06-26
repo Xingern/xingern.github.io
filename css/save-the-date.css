@@ -266,3 +266,38 @@ footer a {
         font-size: 1.2rem;
     }
 }
+
+
+/* RSVP Section Styles */
+.rsvp-section {
+    background: #f7f7fa;
+    padding: 48px 16px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 40px auto 32px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.rsvp-section .section-title {
+    margin-bottom: 16px;
+}
+.rsvp-text {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    color: #444;
+}
+.rsvp-button {
+    display: inline-block;
+    background: #d4b595;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(229,115,115,0.15);
+}
+.rsvp-button:hover {
+    background: #b7824c;
+}
