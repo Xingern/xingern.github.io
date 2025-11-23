@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.tabs {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 40px 20px;
+    background: #ffffff; /* hvit bakgrunn */
+    border-radius: 0;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+}
+
+/* Hold innholdet sentrert med litt horisontal padding */
+.tabs .tab-buttons,
+.tabs .tab-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.tab-buttons{ 
+    display:flex; 
+    gap:12px; /* litt mer mellomrom */
+    flex-wrap:wrap; 
+    margin-bottom:1em;
+}
+.tab-buttons button{ 
+    flex: 0 1 auto;
+    min-width: 140px;        /* gjør knappene bredere på store skjermer */
+    padding:0.9em 1.1em;    /* større klikkflate */
+    font-size: 1.05rem;      /* større tekst */
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    background:#f4f4f4;
+    border:1.2px solid #e0e0e0; 
+    color: #444;
+    transition: background .15s, transform .12s, box-shadow .12s;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+}
+.tab-buttons button:hover {
+    transform: translateY(-2px);
+    background: #d4b595;
+    color:#fff; 
+}
+.tab-buttons button:focus {
+    outline: 3px solid rgba(212,181,149,0.25);
+    outline-offset: 3px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.06);
+}
+.tab-buttons button.active{ 
+    background:#b7824c; 
+    color:#fff; 
+    border-color:#b7824c;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.tab-content>div{ 
+    display:none; 
+}
+.tab-content>div.active{ 
+    display:block; 
+    animation:fadeIn .22s ease-in; 
+}
+@keyframes fadeIn{ 
+    from{
+        opacity:0; transform:translateY(6px);
+    } to{
+        opacity:1; transform:translateY(0);
+    } 
+}
+.detail-list{ 
+    line-height:1.6; 
+    margin:0.4em 0;
+}
+iframe.map-embed{ 
+    width:100%; 
+    height:260px; 
+    border:0; 
+    border-radius:8px; 
+}
+@media (max-width:520px){ 
+    .tab-buttons button{ 
+        font-size:14px; 
+    } 
+}
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../media/bryllup/venue.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:rgba(0,0,0,0.3);
+    z-index: 1;
+    pointer-events: none;
+}
+.hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background: linear-gradient(to top, #f8f5f2, transparent);
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.names {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.date {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 100px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    z-index: 10;
+}
+
+.scroll-down::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 13px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Video section */
+.video-section {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 300;
+    color: #333;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #d4b595;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-placeholder {
+    background-color: #eee;
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 1.2rem;
+}
+
+/* Details section */
+.details-section {
+    padding: 100px 20px;
+    background-color: #f8f5f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.detail-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    /* fjernet width: 100% og max-width for å la flex styre bredden på større skjermer */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.detail-card:hover {
+    transform: translateY(-5px);
+}
+
+.detail-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #d4b595;
+}
+
+.detail-title {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.detail-text {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #d4b595;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .names {
+        font-size: 2.5rem;
+    }
+    
+    .date {
+        font-size: 1.4rem;
+    }
+    
+    .video-section, .details-section {
+        padding: 60px 20px;
+    }
+    
+    .detail-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .names {
+        font-size: 2rem;
+    }
+    
+    .date {
+        font-size: 1.2rem;
+    }
+}
+
+/* RSVP Section Styles */
+.rsvp-section {
+    background: #f7f7fa;
+    padding: 48px 16px;
+    text-align: center;
+    border-radius: 16px;
+    margin: 40px auto 32px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.rsvp-section .section-title {
+    margin-bottom: 16px;
+}
+.rsvp-text {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+    color: #444;
+}
+.rsvp-button {
+    display: inline-block;
+    background: #d4b595;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 36px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(229,115,115,0.15);
+}
+.rsvp-button:hover {
+    background: #b7824c;
+}
+
+/* Sørg for at RSVP-seksjonen ikke flyter ved siden av footer */
+.rsvp-section {
+    display: block;
+    max-width: 600px;
+    margin: 40px auto 32px;
+    clear: both;
+    z-index: 1;
+}
+
+/* Tving footer til å ligge under innholdet */
+footer {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin-top: 24px;
+}
+
+/* Større detail-cards i 2 kolonner på større skjermer */
+@media (min-width: 900px) {
+    .details-container {
+        max-width: 1100px;         /* begrens total bredde så to kolonner ser fine ut */
+        gap: 40px;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    .detail-card {
+        flex: 0 0 calc(50% - 20px); /* to kolonner */
+        max-width: none;            /* fjern tidligere 300px-begrensning */
+        padding: 36px;
+        font-size: 1.03rem;
+        text-align: left;
+    }
+}
+
+/* For veldig store skjermer */
+@media (min-width: 1400px) {
+    .details-container {
+        max-width: 1400px;
+        gap: 56px;
+    }
+
+    .detail-card {
+        flex: 0 0 calc(50% - 28px);
+        padding: 44px;
+    }
+}
+
+
+/* Hold selve innholdet (knapper + paneler) begrenset og sentrert */
+.tabs .tab-buttons,
+.tabs .tab-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+/* Mindre padding på små skjermer */
+@media (max-width: 520px) {
+    .tabs {
+        padding: 20px 12px;
+    }
+    .tabs .tab-buttons, .tabs .tab-content { padding: 0; }
+}
+
+/* Kontaktpersoner (tab) */
+.contacts-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+}
+
+@media (min-width: 600px) {
+    .contacts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.contact-card {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.contact-photo {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex: 0 0 72px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.contact-info h4 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.contact-role {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.contact-info a {
+    color: #b7824c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
