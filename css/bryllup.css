@@ -57,7 +57,7 @@ body {
 }
 .tab-buttons button:hover {
     transform: translateY(-2px);
-    background: #d4b595;
+    background: #C69C71;
     color:#fff; 
 }
 .tab-buttons button:focus {
@@ -372,7 +372,7 @@ footer a {
 }
 .rsvp-button {
     display: inline-block;
-    background: #d4b595;
+    background: #C69C71;
     color: #fff;
     font-weight: 600;
     padding: 14px 36px;
